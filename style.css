@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  font-size: 1.3rem;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.card-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33rem;
+  grid-template-rows: 44rem 24rem 22rem 38rem 44rem;
+  justify-content: center;
+  gap: 3.2rem;
+}
+
+.heading-primary {
+  font-size: 1.3rem;
+  color: hsl(210, 46%, 95%);
+}
+
+.head-three,
+.head-five {
+  color: hsl(219, 29%, 14%);
+}
+
+.profile-text {
+  color: hsl(0, 0%, 81%);
+}
+
+.profile {
+  padding: 2rem 3rem 3rem 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  z-index: 0;
+}
+
+.profile-one {
+  background-color: hsl(263, 55%, 52%);
+  position: relative;
+}
+
+.profile-one::before {
+  content: "";
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("./images/bg-pattern-quotation.svg");
+  transform: translate(-40%, 0%);
+  z-index: -1;
+}
+
+.profile-two {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.profile-three,
+.profile-five {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.profile-four {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.profile-three h2,
+.profile-five h2 {
+  color: hsl(219, 29%, 14%);
+}
+
+.profile-three p,
+.profile-five p {
+  color: hsl(219, 29%, 14%);
+}
+
+.profile-card {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.profile-card img {
+  width: 4rem;
+  border-radius: 100%;
+  border: 3px solid #8c51b9;
+}
+
+.profile-text {
+  opacity: 0.7;
+}
+
+.card-three img,
+.card-five img {
+  border: none;
+}
+
+.heading-secondary {
+  color: hsl(210, 46%, 95%);
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+blockquote {
+  color: hsl(0, 0%, 81%);
+  line-height: 1.4;
+}
+
+.quote-subquote {
+  color: hsl(219, 29%, 14%);
+  opacity: 0.5;
+}
